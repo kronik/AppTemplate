@@ -7,6 +7,7 @@
 //
 
 #import "DKAppDelegate.h"
+#import "DKBaseViewController.h"
 
 #import "KeychainItemWrapper.h"
 #import "NSString+MD5Addition.h"
@@ -100,7 +101,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"DataModel"];
 
     NSString *bundleId = [[[NSBundle mainBundle] infoDictionary] valueForKey:(id)kCFBundleIdentifierKey];

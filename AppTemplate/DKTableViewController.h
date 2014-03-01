@@ -11,6 +11,8 @@
 
 @interface DKTableViewController : DKBaseViewController
 
+@property (nonatomic, strong) UITableView *tableView;
+
 - (void)configureCell:(DKTableViewCell *)cell atIndex:(NSIndexPath*)indexPath;
 - (void)registerCellClassesForTableView: (UITableView *)tableView;
 - (void)didSelectItem: (NSObject *)item;

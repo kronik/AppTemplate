@@ -12,8 +12,6 @@
 
 @interface DKTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) UITableView *tableView;
-
 @end
 
 @implementation DKTableViewController

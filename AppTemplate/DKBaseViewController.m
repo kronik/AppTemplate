@@ -46,8 +46,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-}
+    
+    self.automaticallyAdjustsScrollViewInsets = YES;
 
+    [self setNeedsStatusBarAppearanceUpdate];
+    [self.navigationController interactivePopGestureRecognizer];
+}
 
 - (void)updateUI {
     [self hideIndicator];
@@ -205,6 +209,14 @@
     [self.progressView dismiss:YES completion:^{
         self.progressView = nil;
     }];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 @end

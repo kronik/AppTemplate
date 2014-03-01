@@ -1,6 +1,6 @@
 //
-// RECommonFunctions.m
-// REFrostedViewController
+// REPickerItem.h
+// RETableViewManager
 //
 // Copyright (c) 2013 Roman Efimov (https://github.com/romaonthego)
 //
@@ -23,23 +23,19 @@
 // THE SOFTWARE.
 //
 
-#import "RECommonFunctions.h"
-#import <UIKit/UIKit.h>
+#import "RETableViewItem.h"
+#import "REInlinePickerItem.h"
 
-BOOL REFrostedViewControllerUIKitIsFlatMode()
-{
-    static BOOL isUIKitFlatMode = NO;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        if (floor(NSFoundationVersionNumber) > 993.0) {
-            // If your app is running in legacy mode, tintColor will be nil - else it must be set to some color.
-            if (UIApplication.sharedApplication.keyWindow) {
-                isUIKitFlatMode = [UIApplication.sharedApplication.delegate.window performSelector:@selector(tintColor)] != nil;
-            } else {
-                // Possible that we're called early on (e.g. when used in a Storyboard). Adapt and use a temporary window.
-                isUIKitFlatMode = [[UIWindow new] performSelector:@selector(tintColor)] != nil;
-            }
-        }
-    });
-    return isUIKitFlatMode;
-}
+@interface REPickerItem : RETableViewItem
+
+@property (strong, readwrite, nonatomic) NSArray *options;
+@property (strong, readwrite, nonatomic) NSArray *value;
+@property (copy, readwrite, nonatomic) NSString *placeholder;
+@property (assign, readwrite, nonatomic) BOOL inlinePicker;
+@property (strong, readwrite, nonatomic) REInlinePickerItem *inlinePickerItem;
+@property (copy, readwrite, nonatomic) void (^onChange)(REPickerItem *item);
+
++ (instancetype)itemWithTitle:(NSString *)title value:(NSArray *)value placeholder:(NSString *)placeholder options:(NSArray *)options;
+- (id)initWithTitle:(NSString *)title value:(NSArray *)value placeholder:(NSString *)placeholder options:(NSArray *)options;
+
+@end
