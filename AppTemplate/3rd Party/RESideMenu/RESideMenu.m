@@ -92,10 +92,10 @@
     [super viewDidLoad];
   
     if (!_contentViewInLandscapeOffsetCenterX)
-        _contentViewInLandscapeOffsetCenterX = -30; //CGRectGetHeight(self.view.frame) + 30.f;
+        _contentViewInLandscapeOffsetCenterX = CGRectGetHeight(self.view.frame) + 30.f;
     
     if (!_contentViewInPortraitOffsetCenterX)
-        _contentViewInPortraitOffsetCenterX  =-30;// CGRectGetWidth(self.view.frame) + 30.f;
+        _contentViewInPortraitOffsetCenterX  = CGRectGetWidth(self.view.frame) + 30.f;
     
     self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.backgroundImageView = ({
@@ -388,7 +388,7 @@
     }
     
     if (recognizer.state == UIGestureRecognizerStateEnded) {
-        if ([recognizer velocityInView:self.view].x < 0) {
+        if ([recognizer velocityInView:self.view].x > 0) {
             [self showMenuViewController];
         } else {
             [self hideMenuViewController];
@@ -420,7 +420,9 @@
     contentViewController.view.transform = transform;
     contentViewController.view.frame = frame;
     
-    [self addContentViewControllerMotionEffects];
+    if(self.visible) {
+        [self addContentViewControllerMotionEffects];
+    }
 }
 
 - (void)setContentViewController:(UIViewController *)contentViewController animated:(BOOL)animated

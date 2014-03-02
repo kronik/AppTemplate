@@ -96,6 +96,9 @@
 		027273B118C20D7F0096A63A /* RELengthValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738218C20D7F0096A63A /* RELengthValidator.m */; };
 		027273B218C20D7F0096A63A /* REPresenceValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738418C20D7F0096A63A /* REPresenceValidator.m */; };
 		027273B318C20D7F0096A63A /* REURLValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0272738618C20D7F0096A63A /* REURLValidator.m */; };
+		027273B618C2B9AC0096A63A /* DKMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027273B518C2B9AC0096A63A /* DKMenuViewController.m */; };
+		027273BB18C331D10096A63A /* DKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027273B818C331D10096A63A /* DKHomeViewController.m */; };
+		027273BC18C331D10096A63A /* DKSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 027273BA18C331D10096A63A /* DKSettingsViewController.m */; };
 		0297F2E218BECC60006AC7F7 /* THSpringyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F2E118BECC60006AC7F7 /* THSpringyFlowLayout.m */; };
 		0297F2E618BECCA2006AC7F7 /* NIBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F2E518BECCA2006AC7F7 /* NIBadgeView.m */; };
 		0297F31918BECCCE006AC7F7 /* NIActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0297F2EA18BECCCE006AC7F7 /* NIActions.m */; };
@@ -633,6 +636,12 @@
 		0272738418C20D7F0096A63A /* REPresenceValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REPresenceValidator.m; sourceTree = "<group>"; };
 		0272738518C20D7F0096A63A /* REURLValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REURLValidator.h; sourceTree = "<group>"; };
 		0272738618C20D7F0096A63A /* REURLValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REURLValidator.m; sourceTree = "<group>"; };
+		027273B418C2B9AC0096A63A /* DKMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKMenuViewController.h; sourceTree = "<group>"; };
+		027273B518C2B9AC0096A63A /* DKMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKMenuViewController.m; sourceTree = "<group>"; };
+		027273B718C331D10096A63A /* DKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKHomeViewController.h; sourceTree = "<group>"; };
+		027273B818C331D10096A63A /* DKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKHomeViewController.m; sourceTree = "<group>"; };
+		027273B918C331D10096A63A /* DKSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSettingsViewController.h; sourceTree = "<group>"; };
+		027273BA18C331D10096A63A /* DKSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSettingsViewController.m; sourceTree = "<group>"; };
 		0297F2E018BECC60006AC7F7 /* THSpringyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THSpringyFlowLayout.h; sourceTree = "<group>"; };
 		0297F2E118BECC60006AC7F7 /* THSpringyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THSpringyFlowLayout.m; sourceTree = "<group>"; };
 		0297F2E418BECCA2006AC7F7 /* NIBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIBadgeView.h; sourceTree = "<group>"; };
@@ -1593,6 +1602,12 @@
 				0272729218C174D80096A63A /* Base ViewControllers */,
 				02F125F518BDF246009434BA /* DKViewController.h */,
 				02F125F618BDF246009434BA /* DKViewController.m */,
+				027273B418C2B9AC0096A63A /* DKMenuViewController.h */,
+				027273B518C2B9AC0096A63A /* DKMenuViewController.m */,
+				027273B718C331D10096A63A /* DKHomeViewController.h */,
+				027273B818C331D10096A63A /* DKHomeViewController.m */,
+				027273B918C331D10096A63A /* DKSettingsViewController.h */,
+				027273BA18C331D10096A63A /* DKSettingsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -3553,6 +3568,7 @@
 				0268888618BE3444005599FB /* MagicalImportFunctions.m in Sources */,
 				027273A518C20D7F0096A63A /* REPlaceholderTextView.m in Sources */,
 				0268883B18BE32C3005599FB /* UIColor+MLPFlatColors.m in Sources */,
+				027273B618C2B9AC0096A63A /* DKMenuViewController.m in Sources */,
 				0297F32918BECCCE006AC7F7 /* NIRuntimeClassModifications.m in Sources */,
 				02F127EC18BE2EBB009434BA /* NIKFontAwesomePathRenderer.m in Sources */,
 				0268889C18BE3444005599FB /* MagicalRecord+Options.m in Sources */,
@@ -3659,6 +3675,7 @@
 				02F1284A18BE2FA1009434BA /* UINavigationController+M13ProgressViewBar.m in Sources */,
 				02F128ED18BE2FE0009434BA /* MHOverViewController.m in Sources */,
 				0272739218C20D7F0096A63A /* RETableViewPickerCell.m in Sources */,
+				027273BB18C331D10096A63A /* DKHomeViewController.m in Sources */,
 				02F1269618BE2ADD009434BA /* UIImageView+AFNetworking.m in Sources */,
 				0272739118C20D7F0096A63A /* RETableViewOptionCell.m in Sources */,
 				0268888E18BE3444005599FB /* NSManagedObject+MagicalDataImport.m in Sources */,
@@ -3693,6 +3710,7 @@
 				0297F32818BECCCE006AC7F7 /* NIPaths.m in Sources */,
 				0297F36C18BFFECA006AC7F7 /* MRIconView.m in Sources */,
 				02F128F618BE2FE0009434BA /* NBPhoneMetaData.m in Sources */,
+				027273BC18C331D10096A63A /* DKSettingsViewController.m in Sources */,
 				0297F32718BECCCE006AC7F7 /* NIOperations.m in Sources */,
 				02F1280118BE2EE0009434BA /* FXBlurView.m in Sources */,
 				02F1268F18BE2ADD009434BA /* AFURLRequestSerialization.m in Sources */,

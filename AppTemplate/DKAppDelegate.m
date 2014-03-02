@@ -8,6 +8,8 @@
 
 #import "DKAppDelegate.h"
 #import "DKBaseViewController.h"
+#import "DKMenuViewController.h"
+#import "DKHomeViewController.h"
 
 #import "KeychainItemWrapper.h"
 #import "NSString+MD5Addition.h"
@@ -107,6 +109,18 @@
 
     self.keychainWrapper = [[KeychainItemWrapper alloc] initWithIdentifier:self.defaultAppName accessGroup:[NSString stringWithFormat:@"%@.GenericKeychainSuite", bundleId]];
 
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[DKHomeViewController alloc] init]];
+    DKMenuViewController *menuViewController = [[DKMenuViewController alloc] init];
+    
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController menuViewController:menuViewController];
+    sideMenuViewController.delegate = self;
+    self.window.rootViewController = sideMenuViewController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }
@@ -181,6 +195,25 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+}
+
+#pragma mark -
+#pragma mark RESideMenu Delegate
+
+- (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"willShowMenuViewController");
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"didShowMenuViewController");
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu willHideMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"willHideMenuViewController");
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didHideMenuViewController:(UIViewController *)menuViewController {
+    NSLog(@"didHideMenuViewController");
 }
 
 @end
