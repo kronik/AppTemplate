@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
-#import "DKBaseViewController.h"
+#import "DKCollectionViewController.h"
 
-@interface DKMenuViewController : DKBaseViewController <UITableViewDataSource, UITableViewDelegate>
+@interface DKMenuViewController : DKCollectionViewController
 
 @end

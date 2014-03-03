@@ -136,4 +136,32 @@
     [_animator removeAllBehaviors];
     [_visibleIndexPaths removeAllObjects];
 }
+
+//- (UICollectionViewLayoutAttributes*)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
+//    UICollectionViewLayoutAttributes *attributes = [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
+//
+//    attributes.transform3D = CATransform3DMakeTranslation(0, self.collectionView.bounds.size.height, 0);
+//    
+//    return attributes;
+//}
+//
+//    if (!self.isBoring)
+//    {
+//        if ([self.insertedIndexPaths containsObject:itemIndexPath])
+//        {
+//            // If this is a newly inserted item, make it grow into place from its nominal index path
+//            attributes = [[self.currentCellAttributes objectForKey:itemIndexPath] copy];
+//            attributes.transform3D = CATransform3DMakeScale(0.1, 0.1, 1.0);
+//        }
+//        else if ([self.insertedSectionIndices containsObject:@(itemIndexPath.section)])
+//        {
+//            // if it's part of a new section, fly it in from the left
+//            attributes = [[self.currentCellAttributes objectForKey:itemIndexPath] copy];
+//            attributes.transform3D = CATransform3DMakeTranslation(-self.collectionView.bounds.size.width, 0, 0);
+//        }
+//        
+//    }
+//    return attributes;
+//}
+
 @end

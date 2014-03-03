@@ -48,6 +48,7 @@
 	// Do any additional setup after loading the view.
     
     self.automaticallyAdjustsScrollViewInsets = YES;
+    self.view.backgroundColor = [UIColor whiteColor];
 
     [self setNeedsStatusBarAppearanceUpdate];
     [self.navigationController interactivePopGestureRecognizer];

@@ -10,6 +10,8 @@
 
 @interface DKCollectionViewCell : UICollectionViewCell
 
+@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSObject *item;
 
 @end

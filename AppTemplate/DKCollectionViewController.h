@@ -11,8 +11,10 @@
 
 @interface DKCollectionViewController : DKBaseViewController
 
-- (void)configureCell:(UICollectionViewCell*)cell atIndex:(NSIndexPath*)indexPath;
+@property (nonatomic, strong) UICollectionView *collectionView;
+
+- (void)configureCell:(DKCollectionViewCell *)cell atIndex:(NSIndexPath*)indexPath;
 - (void)registerCellClassesForCollectionView: (UICollectionView *)collectionView;
-- (void) didSelectItem: (NSObject *)item;
+- (void)didSelectItem: (NSObject *)item atIndex:(NSIndexPath*)indexPath;
 
 @end

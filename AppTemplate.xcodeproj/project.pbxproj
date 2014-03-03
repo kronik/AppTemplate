@@ -173,8 +173,6 @@
 		02F1264818BE2AD5009434BA /* canyon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1262A18BE2AD5009434BA /* canyon@2x.png */; };
 		02F1264918BE2AD5009434BA /* canyon@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1262B18BE2AD5009434BA /* canyon@2x~ipad.png */; };
 		02F1264A18BE2AD5009434BA /* canyon~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1262C18BE2AD5009434BA /* canyon~ipad.png */; };
-		02F1264B18BE2AD5009434BA /* nature-ipad.psd in Resources */ = {isa = PBXBuildFile; fileRef = 02F1262D18BE2AD5009434BA /* nature-ipad.psd */; };
-		02F1264C18BE2AD5009434BA /* nature-iphone.psd in Resources */ = {isa = PBXBuildFile; fileRef = 02F1262E18BE2AD5009434BA /* nature-iphone.psd */; };
 		02F1264D18BE2AD5009434BA /* niagara.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1262F18BE2AD5009434BA /* niagara.png */; };
 		02F1264E18BE2AD5009434BA /* niagara@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1263018BE2AD5009434BA /* niagara@2x.png */; };
 		02F1264F18BE2AD5009434BA /* niagara@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F1263118BE2AD5009434BA /* niagara@2x~ipad.png */; };
@@ -773,8 +771,6 @@
 		02F1262A18BE2AD5009434BA /* canyon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canyon@2x.png"; sourceTree = "<group>"; };
 		02F1262B18BE2AD5009434BA /* canyon@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canyon@2x~ipad.png"; sourceTree = "<group>"; };
 		02F1262C18BE2AD5009434BA /* canyon~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "canyon~ipad.png"; sourceTree = "<group>"; };
-		02F1262D18BE2AD5009434BA /* nature-ipad.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nature-ipad.psd"; sourceTree = "<group>"; };
-		02F1262E18BE2AD5009434BA /* nature-iphone.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "nature-iphone.psd"; sourceTree = "<group>"; };
 		02F1262F18BE2AD5009434BA /* niagara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niagara.png; sourceTree = "<group>"; };
 		02F1263018BE2AD5009434BA /* niagara@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "niagara@2x.png"; sourceTree = "<group>"; };
 		02F1263118BE2AD5009434BA /* niagara@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "niagara@2x~ipad.png"; sourceTree = "<group>"; };
@@ -2158,8 +2154,6 @@
 				02F1262A18BE2AD5009434BA /* canyon@2x.png */,
 				02F1262B18BE2AD5009434BA /* canyon@2x~ipad.png */,
 				02F1262C18BE2AD5009434BA /* canyon~ipad.png */,
-				02F1262D18BE2AD5009434BA /* nature-ipad.psd */,
-				02F1262E18BE2AD5009434BA /* nature-iphone.psd */,
 				02F1262F18BE2AD5009434BA /* niagara.png */,
 				02F1263018BE2AD5009434BA /* niagara@2x.png */,
 				02F1263118BE2AD5009434BA /* niagara@2x~ipad.png */,
@@ -3426,7 +3420,6 @@
 				02F128FA18BE2FE0009434BA /* NBPhoneNumberMetadata.plist in Resources */,
 				02F1263C18BE2AD5009434BA /* amazonas@2x.png in Resources */,
 				02F128E718BE2FE0009434BA /* unplay@2x.png in Resources */,
-				02F1264C18BE2AD5009434BA /* nature-iphone.psd in Resources */,
 				02F128E418BE2FE0009434BA /* twitterMH.png in Resources */,
 				02F1297D18BE3012009434BA /* SheetButtonGeneric@2x.png in Resources */,
 				02F1297618BE3012009434BA /* SheetButtonDestroy@2x.png in Resources */,
@@ -3444,7 +3437,6 @@
 				02F1265818BE2AD5009434BA /* sunrise~ipad.png in Resources */,
 				02F128DD18BE2FE0009434BA /* playButton.png in Resources */,
 				02F1290018BE2FE0009434BA /* OpenSans-Bold.ttf in Resources */,
-				02F1264B18BE2AD5009434BA /* nature-ipad.psd in Resources */,
 				027273A918C20D7F0096A63A /* RETableViewManager.bundle in Resources */,
 				02F1265018BE2AD5009434BA /* niagara~ipad.png in Resources */,
 				02F125F418BDF246009434BA /* Main_iPad.storyboard in Resources */,

@@ -114,8 +114,13 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[DKHomeViewController alloc] init]];
     DKMenuViewController *menuViewController = [[DKMenuViewController alloc] init];
     
+    NSArray *backgrounds = @[@"amazonas", @"billow", @"candela", @"canyon", @"niagara", @"sky", @"sunrise"];
+    NSString *background = backgrounds[arc4random() % backgrounds.count];
     RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController menuViewController:menuViewController];
+
     sideMenuViewController.delegate = self;
+    sideMenuViewController.backgroundImage = [UIImage imageNamed:background];
+
     self.window.rootViewController = sideMenuViewController;
     
     self.window.backgroundColor = [UIColor whiteColor];
