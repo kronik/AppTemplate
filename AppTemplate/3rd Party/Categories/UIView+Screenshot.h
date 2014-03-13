@@ -4,5 +4,6 @@
 @interface UIView (Screenshot)
 
 - (UIImage *)screenshot;
+- (UIImage *)screenshotFast;
 
 @end

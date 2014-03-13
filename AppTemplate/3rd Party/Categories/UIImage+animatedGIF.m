@@ -67,7 +67,7 @@ static NSArray *frameArray(size_t const count, CGImageRef const images[count], i
     size_t const frameCount = totalDurationCentiseconds / gcd;
     UIImage *frames[frameCount];
     for (size_t i = 0, f = 0; i < count; ++i) {
-        UIImage *const frame = [UIImage imageWithCGImage:images[i]];
+        UIImage *const frame = [UIImage imageWithCGImage:images[i] scale:[[UIScreen mainScreen] scale] orientation:UIImageOrientationUp];
         for (size_t j = delayCentiseconds[i] / gcd; j > 0; --j) {
             frames[f++] = frame;
         }
